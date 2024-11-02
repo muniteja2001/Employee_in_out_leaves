@@ -1,0 +1,83 @@
+  /* Basic reset and background styling */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./thunder.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Form container styling */
+form {
+    background-color: deeppink;
+    border: 2px solid red;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: rgb(0, 255, 76);
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* Input fields styling */
+.time {
+    height: 30px;
+    width: calc(100% - 30px);
+    border: 2px solid orange;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+/* Button styling */
+.time1 {
+    background-color: red;
+    border: 2px solid blue;
+    border-radius: 5px;
+    color: rgb(215, 205, 17);
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.time1:hover {
+    background-color: darkred;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .time, .time1 {
+        font-size: 1em;
+        width: 100%;
+    }
+}
